@@ -10,7 +10,7 @@ async function jokeGen() {
 		const newJoke = await fetch("https://api.chucknorris.io/jokes/random").then(resp => resp.json());
 		checkLength(newJoke.value);
 		jokeText.textContent = newJoke.value;
-		const randomResp = Math.floor(Math.random()*(14)+1);
+		const randomResp = Math.floor(Math.random()*(18)+1);
 		checkEmoji(randomResp);
 		reactText.textContent = reactions[randomResp];
 		}
@@ -48,6 +48,10 @@ const reactions = {
 	11: "😂",
 	12: "heh heh heh",
 	13: "not again",
-	14: "get away from me"
+	14: "get away from me",
+	15: "i can't EVEN with you",
+	16: "ughHgahgGh",
+	17: "i feel small",
+	18: "yeaaaaghhhh!",
 }
 
