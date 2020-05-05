@@ -14,6 +14,7 @@ h2 {
 p {
 	padding: 1rem;
 	margin:	0;
+	overflow-wrap: break-word;
 }
 p.emoji {
 	font-size: 2rem;
